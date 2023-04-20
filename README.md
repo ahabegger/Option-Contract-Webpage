@@ -1,8 +1,11 @@
-#README.md
-##Black Scholes Model in Python
+# README.md
+
+## Black Scholes Model in Python
+
 This is a Python implementation of the Black Scholes Model for option pricing, along with a collection of helper functions for calculating option Greeks and implied volatility. The code also includes a basic MySQL database interaction to upload option data.
 
-##Overview
+## Overview
+
 The Black-Scholes Model is a mathematical model for pricing European options. It makes certain assumptions:
 
 * No dividends are paid out during the life of the option.
@@ -11,8 +14,8 @@ The Black-Scholes Model is a mathematical model for pricing European options. It
 * The risk-free rate and volatility of the underlying asset are known and constant.
 * The returns on the underlying asset are log-normally distributed.
 * The option is European and can only be exercised at expiration.
-Usage
 
+## Usage
 The main functions provided by this code are:
 
 * black_scholes(s, k, t, v, rf, div, cp): Price an option using the Black-Scholes model.
@@ -23,21 +26,12 @@ The main functions provided by this code are:
 * call_implied_volatility(Price, S, K, T, r): Calculate the implied volatility for call options.
 * put_implied_volatility(Price, S, K, T, r): Calculate the implied volatility for put options.
 
-##Database Interaction
+## Database Interaction
 The code includes functions to interact with a MySQL database:
 
 * sql_upload(ticker): Upload options data for a given ticker to a MySQL database.
 * clear_all_tables(): Clear all tables in the MySQL database.
 * clear_table(tablename): Clear a specific table in the MySQL database.
 
-##Author
+## Author
 **Alex Habegger**
-print("Num : {0}".format(test1))
-print("Num : {0}".format(test2))
-print("Num : {0}".format(test3))
-Requirements
-Python 3.x
-scipy library
-pymysql library
-Author
-Alex Habegger
