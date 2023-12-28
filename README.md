@@ -1,8 +1,7 @@
-# README.md
+# Black Scholes Model in Python
+Alex Habegger
 
-## Black Scholes Model in Python
-
-This is a Python implementation of the Black Scholes Model for option pricing, along with a collection of helper functions for calculating option Greeks and implied volatility. The code also includes a basic MySQL database interaction to upload option data.
+This is a Python implementation of the Black Scholes Model for option pricing and a collection of helper functions for calculating option Greeks and implied volatility. The code also includes an essential MySQL database interaction to upload option data.
 
 ## Overview
 
@@ -32,6 +31,3 @@ The code includes functions to interact with a MySQL database:
 * sql_upload(ticker): Upload options data for a given ticker to a MySQL database.
 * clear_all_tables(): Clear all tables in the MySQL database.
 * clear_table(tablename): Clear a specific table in the MySQL database.
-
-## Author
-**Alex Habegger**
